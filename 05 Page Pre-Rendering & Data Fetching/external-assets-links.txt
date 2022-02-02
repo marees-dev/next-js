@@ -1,0 +1,12 @@
+
+087 Starting-Project
+https://github.com/mschwarzmueller/nextjs-course-code/tree/9c683f0a32905479dbe8f5ce60b297105825e9ef
+
+088 dummy-backend.json-File
+https://github.com/mschwarzmueller/nextjs-course-code/blob/04-data-fetching-extra-files/data/dummy-backend.json
+
+103 NodeJS-req-Documentation
+https://nodejs.org/api/http.html#http_class_http_incomingmessage
+
+103 NodeJS-res-Documentation
+https://nodejs.org/api/http.html#http_class_http_serverresponse

@@ -1,0 +1,39 @@
+
+016 Vanilla-JavaScript-vs-React-Comparison-Project
+https://github.com/mschwarzmueller/nextjs-course-code/blob/zz-react-summary-extra-files/react-vs-vanilla-js-example.zip
+
+018 React-vs-Angular-vs-Vue-Comparison
+https://academind.com/tutorials/angular-vs-react-vs-vue-my-thoughts/
+
+021 Starting-Project
+https://github.com/mschwarzmueller/nextjs-course-code/tree/cbb583666a1d032852b41d3bf05bf8f386ae1e6b
+
+023 index.css-File
+https://github.com/mschwarzmueller/nextjs-course-code/blob/c34af820285af1e7bfb3d0a0327168b5440125f6/src/index.css
+
+028 What-is-State-
+https://academind.com/tutorials/what-is-state/
+
+030 Updated-Started-Project
+https://github.com/mschwarzmueller/nextjs-course-code/tree/f09d94f9a61700bc544a90edb53bdaaf3c4c7f8a
+
+032 Style-Files
+https://github.com/mschwarzmueller/nextjs-course-code/tree/zz-react-summary-extra-files/styles
+
+033 Dummy-Data
+https://github.com/mschwarzmueller/nextjs-course-code/blob/zz-react-summary-extra-files/data/dummy-data.js
+
+034 Style-Files
+https://github.com/mschwarzmueller/nextjs-course-code/tree/zz-react-summary-extra-files/styles
+
+035 Style-Files
+https://github.com/mschwarzmueller/nextjs-course-code/tree/zz-react-summary-extra-files/styles
+
+036 Style-Files
+https://github.com/mschwarzmueller/nextjs-course-code/tree/zz-react-summary-extra-files/styles
+
+037 Tutorial-Build-a-REST-API
+https://academind.com/tutorials/building-a-restful-api-with-nodejs/
+
+037 Tutorial-How-To-Connect-SPAs-to-Databases
+https://academind.com/tutorials/connect-to-database/

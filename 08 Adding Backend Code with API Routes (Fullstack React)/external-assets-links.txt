@@ -1,0 +1,9 @@
+
+137 Starting-Project
+https://github.com/mschwarzmueller/nextjs-course-code/tree/17bf671a9347bdd3f5a293cd7a6b1f40bc60875e
+
+138 How-Not-To-Connect-SPAs-To-Databases
+https://academind.com/tutorials/connect-to-database/
+
+143 Understanding-bind-
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_objects/Function/bind

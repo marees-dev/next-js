@@ -1,0 +1,27 @@
+
+067 Starting-Project
+https://github.com/mschwarzmueller/nextjs-course-code/tree/193d8302fe13db78dedaa57fd99becdd871eb343
+
+069 Dummy-Data
+https://github.com/mschwarzmueller/nextjs-course-code/blob/03-prj-routing-extra-files/data/dummy-data.js
+
+072 Style-Files
+https://github.com/mschwarzmueller/nextjs-course-code/tree/03-prj-routing-extra-files/styles
+
+073 Style-Files
+https://github.com/mschwarzmueller/nextjs-course-code/tree/03-prj-routing-extra-files/styles
+
+073 Icons
+https://github.com/mschwarzmueller/nextjs-course-code/tree/03-prj-routing-extra-files/components
+
+074 Event-Detail-Component
+https://github.com/mschwarzmueller/nextjs-course-code/tree/03-prj-routing-extra-files/components
+
+075 Style-Files
+https://github.com/mschwarzmueller/nextjs-course-code/tree/03-prj-routing-extra-files/styles
+
+077 Style-Files
+https://github.com/mschwarzmueller/nextjs-course-code/tree/03-prj-routing-extra-files/styles
+
+080 Components-ZIP-Files-
+https://github.com/mschwarzmueller/nextjs-course-code/tree/03-prj-routing-extra-files/components

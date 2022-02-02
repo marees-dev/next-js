@@ -1,0 +1,31 @@
+
+                <html>
+                <head>
+                <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+                <title>156 Improvement_ Getting Comments For A Specific Event</title>
+                </head>
+                <body>
+                <div class="container">
+                <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <p class="lead"><p>Here's a little <strong>optional improvement </strong>you could add to the code.</p><p>At the moment, we're always fetching all (!) comments - no matter for which event we sent a GET&nbsp;request.</p><p>We might just want to fetch the comments that belong to that specific event instead.</p><p>You can adjust the code to ensure that only the comments for a specific event (by event id)&nbsp;are fetched.</p><p>For this, you need to <strong>change the code in two places</strong>.</p><p><strong>1)&nbsp;</strong>In <code>helpers/db-util.js</code>, add an extra, optional parameter (with a default value)&nbsp;to the <code>getAllDocuments()</code>&nbsp;parameter list:</p><pre class="prettyprint linenums">export async function getAllDocuments(client, collection, sort) { ... }</pre><p>becomes</p><pre class="prettyprint linenums">export async function getAllDocuments(client, collection, sort, filter =&nbsp;{}) { ... }</pre><p>The <code>filter =&nbsp;{}</code> parameter allows us to set a <strong>filter for finding documents</strong>. The default (an empty object:&nbsp;<code>{}</code>) ensures that <strong>NO&nbsp;filter</strong> is applied (i.e. we get ALL&nbsp;documents).</p><p>To use this filter, also change the <code>find()</code>&nbsp;method inside of the <code>getAllDocuments()</code>&nbsp;function:</p><pre class="prettyprint linenums">const documents =&nbsp;await db
+    .collection(collection)
+    .find(filter) // this changed - we use the "filter"&nbsp;parameter!
+    .sort(sort)
+    .toArray();</pre><p><strong>2)</strong> In <code>pages/api/comments/[eventId].js</code>, pass a value for the filter argument:</p><p>Inside of the <code>req.method ===&nbsp;'GET'</code> block, change the way you call <code>getAllDocuments()</code>.</p><pre class="prettyprint linenums">const documents =&nbsp;await getAllDocuments(
+    client,
+    'comments',
+    { _id:&nbsp;-1 },
+);</pre><p>should become</p><pre class="prettyprint linenums">const documents =&nbsp;await getAllDocuments(
+    client,
+    'comments',
+    { _id:&nbsp;-1 },
+    { eventId:&nbsp;eventId } // this was added!
+);</pre><p>By adding these changes, you ensure that you only fetch the comments that really belong to a specific event.</p></p>
+                </div>
+                </div>
+                </div>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+                </body>
+                </html>
+                
